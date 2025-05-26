@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Stack on 舜-shun</title>
+        <link>https://coolestzero.github.io/categories/stack/</link>
+        <description>Recent content in Stack on 舜-shun</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>舜-shun</copyright>
+        <lastBuildDate>Mon, 26 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://coolestzero.github.io/categories/stack/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title> HUGO发布博客</title>
+        <link>https://coolestzero.github.io/p/hugo%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/</link>
+        <pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://coolestzero.github.io/p/hugo%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/</guid>
+        <description>&lt;img src="https://coolestzero.github.io/p/hugo%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/wallhaven-vqv3ml.jpg" alt="Featured image of post  HUGO发布博客" /&gt;&lt;h3 id=&#34;1文档位置&#34;&gt;1.文档位置
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;放在hugo文件夹下的content&amp;ndash;&amp;gt;post文件夹下&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/images/img-20250525.png&#34;
+	width=&#34;364&#34;
+	height=&#34;102&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/images/img-20250525_hu_42a389cbde7c5c69.png 480w, https://coolestzero.github.io/p/hugo%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/images/img-20250525_hu_19936284b80efed1.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;356&#34;
+		data-flex-basis=&#34;856px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;在这里创建文档文件夹，文件夹的目录结构如下&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/images/t1.png&#34;
+	width=&#34;319&#34;
+	height=&#34;197&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/images/t1_hu_d399d44822637890.png 480w, https://coolestzero.github.io/p/hugo%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/images/t1_hu_94823448a6c707ff.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;161&#34;
+		data-flex-basis=&#34;388px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;文章内容的文件名称需要是index&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2文章设置&#34;&gt;2.文章设置
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;文章开头需要用俩根横线(markdown语法3个+或者3个-)，把设置内容隔开&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/images/t2.png&#34;
+	width=&#34;489&#34;
+	height=&#34;448&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/images/t2_hu_bceee42f54cf5b00.png 480w, https://coolestzero.github.io/p/hugo%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/images/t2_hu_ed254e4dd55fe703.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;109&#34;
+		data-flex-basis=&#34;261px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;image是封面图片&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3友情链接设置&#34;&gt;3.友情链接设置
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;在content&amp;ndash;&amp;gt;page文件夹找到links文件夹，打开里面的文档&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/images/t3.png&#34;
+	width=&#34;370&#34;
+	height=&#34;181&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/images/t3_hu_ac52166c3ae15209.png 480w, https://coolestzero.github.io/p/hugo%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/images/t3_hu_924a61f1f7c464d2.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;204&#34;
+		data-flex-basis=&#34;490px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;在横线内，按照格式输入即可&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/images/t4.png&#34;
+	width=&#34;901&#34;
+	height=&#34;647&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/images/t4_hu_c2c5d557bc821a84.png 480w, https://coolestzero.github.io/p/hugo%E5%8F%91%E5%B8%83%E5%8D%9A%E5%AE%A2/images/t4_hu_c8305c3fdabea45b.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;139&#34;
+		data-flex-basis=&#34;334px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

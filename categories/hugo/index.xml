@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Hugo on 舜-shun</title>
+        <link>https://coolestzero.github.io/categories/hugo/</link>
+        <description>Recent content in Hugo on 舜-shun</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>舜-shun</copyright>
+        <lastBuildDate>Sun, 25 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://coolestzero.github.io/categories/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title> HUGO &#43; Github 部署博客</title>
+        <link>https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/</link>
+        <pubDate>Sun, 25 May 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/</guid>
+        <description>&lt;img src="https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/wallhaven-vqv3ml.jpg" alt="Featured image of post  HUGO &#43; Github 部署博客" /&gt;&lt;h2 id=&#34;hugo--github-部署博客&#34;&gt;HUGO + Github 部署博客
+&lt;/h2&gt;&lt;h5 id=&#34;参考资料httpsletere-gzjgithubiohugo-stackphugocustom-blog&#34;&gt;参考资料：https://letere-gzj.github.io/hugo-stack/p/hugo/custom-blog/
+&lt;/h5&gt;&lt;h5 id=&#34;本文记录一下部署过程的一些踩坑点&#34;&gt;本文记录一下部署过程的一些踩坑点
+&lt;/h5&gt;&lt;h3 id=&#34;一安装环境&#34;&gt;一、安装环境
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;下载Git&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Git官网&lt;/a&gt; ,下载 &lt;strong&gt;Git for Windows/x64 Setup&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;按提示默认安装，基本点下一步就行&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/t1.jpg&#34;
+	width=&#34;1176&#34;
+	height=&#34;415&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/t1_hu_19ed4745633abbc7.jpg 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/t1_hu_eafb633831890ddd.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;图片&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;283&#34;
+		data-flex-basis=&#34;680px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;下载HUGO&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/tags&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;HUGO Github&lt;/a&gt; , 选最新版本，下载解压&lt;/li&gt;
+&lt;li&gt;Windows下载版本：hugo_extended_xxxxx_windows_amd64.zip&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/t2.jpg&#34;
+	width=&#34;1104&#34;
+	height=&#34;403&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/t2_hu_b9ef4f2605f45478.jpg 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/t2_hu_24f0c1f46861503a.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;图片&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;273&#34;
+		data-flex-basis=&#34;657px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;二搭建博客&#34;&gt;二、搭建博客
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;创建博客&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;(1) 在hugo.exe所在文件夹的地址栏敲打cmd，然后Enter唤起命令行&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-20250518.png&#34;
+	width=&#34;435&#34;
+	height=&#34;159&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-20250518_hu_466468dafd50f170.png 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-20250518_hu_11327255010fcb28.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;273&#34;
+		data-flex-basis=&#34;656px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;(2) 输入命令hugo new site xxxx创建hugo文件，xxxx 是文件夹的英文名称，这里创建的名称是dev&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-20250519.png&#34;
+	width=&#34;413&#34;
+	height=&#34;98&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-20250519_hu_4e52a3f11dd0d467.png 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-20250519_hu_97b2d08a9477a494.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;421&#34;
+		data-flex-basis=&#34;1011px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;(3) 输入命名cd xxxx切换目录，因为新建的文件夹没有hugo.exe，接下来要在新文件夹使用hugo.exe，所以要把hugo.exe复制到刚生成的文件夹中&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505191.png&#34;
+	width=&#34;203&#34;
+	height=&#34;481&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505191_hu_af8a04e05fdc29e2.png 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505191_hu_caeaa0e91f440394.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;42&#34;
+		data-flex-basis=&#34;101px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;(4) 输入命令hugo server -D启动服务，访问http://localhost:1313，Ctrl+C停止服务 （hugo默认是没有主题的，需要进行主题配置）&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505192.png&#34;
+	width=&#34;1187&#34;
+	height=&#34;481&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505192_hu_c44088ac18e55f25.png 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505192_hu_15ceb9a396bc6be.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;246&#34;
+		data-flex-basis=&#34;592px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;配置主题&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;(1) 前往&lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo Themes&lt;/a&gt;，查找自己喜欢的主题，进行下载&lt;/li&gt;
+&lt;li&gt;(2) 这里主题使用&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo-theme-stack&lt;/a&gt;，下载最新版，将下载好的主题解压，放到dev文件夹的&lt;code&gt;/themes&lt;/code&gt;文件夹中&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505193.png&#34;
+	width=&#34;299&#34;
+	height=&#34;97&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505193_hu_e874c9d89d5f7325.png 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505193_hu_bf4934fe2992334d.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;308&#34;
+		data-flex-basis=&#34;739px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;(3) 将主题文件夹里的exampleSite样例数据中的 Content 和 hugo.yaml 复制到主文件夹dev中，并删掉dev文件夹里的hugo.toml和content/post/rich-content（这个文件是引用油管的视频）&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505194.png&#34;
+	width=&#34;607&#34;
+	height=&#34;209&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505194_hu_7285c5578929ee62.png 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505194_hu_3b6680bc9d54a334.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;290&#34;
+		data-flex-basis=&#34;697px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;(4) 修改 hugo.yaml 中的 theme，将其修改为跟主题文件夹同名&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505195.png&#34;
+	width=&#34;1117&#34;
+	height=&#34;185&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505195_hu_1377f85108ed71fa.png 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505195_hu_d2ef23662aa5e348.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;603&#34;
+		data-flex-basis=&#34;1449px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;(5) 再次启动hugo服务，查看主题，具体主题配置修改 hugo.yaml，感兴趣可自行查找相关文章，下面是个人使用的设置&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505196.png&#34;
+	width=&#34;1062&#34;
+	height=&#34;1195&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505196_hu_d0f088dab7232680.png 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505196_hu_f1948defd96b3730.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;88&#34;
+		data-flex-basis=&#34;213px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;三github-部署&#34;&gt;三、Github 部署
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;常规部署&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;(1) 前往【&lt;a class=&#34;link&#34; href=&#34;https://github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github官网&lt;/a&gt;】，创建仓库 {github用户名}.github.io，也可以是别的名称&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-20250525.png&#34;
+	width=&#34;906&#34;
+	height=&#34;409&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-20250525_hu_d461ff6158ec28eb.png 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-20250525_hu_695994da1704da08.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;221&#34;
+		data-flex-basis=&#34;531px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;(2) 前往Setting -&amp;gt; Pages -&amp;gt; Branch选择main分支，然后保存，会自动开启 https://{github用户名}.github.io 的地址，这地址也是以后访问博客的地址&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505251.png&#34;
+	width=&#34;1086&#34;
+	height=&#34;674&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505251_hu_9641f73e1734aec.png 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505251_hu_c34abb7a57db1033.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;161&#34;
+		data-flex-basis=&#34;386px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;需要修改hugo.yaml的url信息，将 baseurl 修改成创建的github地址&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505252.png&#34;
+	width=&#34;564&#34;
+	height=&#34;135&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505252_hu_369cf5af7b210145.png 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505252_hu_7b92f151205985a1.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;417&#34;
+		data-flex-basis=&#34;1002px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;(3) 回到hugo文件夹中，打开CMD执行命令hugo -D，会生成 public 静态资源文件夹&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505254.png&#34;
+	width=&#34;282&#34;
+	height=&#34;745&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505254_hu_f09b69de80151835.png 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505254_hu_494e59290a16cad4.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;37&#34;
+		data-flex-basis=&#34;90px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;(4) 在 public 文件夹打开CMD，执行以下命令上传到github仓库上，第一次上传需要输入账号密码，先在命令行输入git 邮箱账号&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git config --global user.email &amp;quot;你的邮箱@example.com&amp;quot;&lt;/code&gt;
+&lt;code&gt;git config --global user.name &amp;quot;你的名字&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;在 public 文件输入git代码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add . //这里选择添加全部文件
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &amp;#34;first commit&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git branch -M main
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git remote add origin {你的github仓库地址}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push -u origin main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;(5) 上传成功后访问 https://{github用户名}.github.io  成功搭建属于自己的Hugo博客&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Github Action自动部署
+&lt;strong&gt;私有仓库的核心作用&lt;/strong&gt;：&lt;br&gt;
+👉 &lt;strong&gt;让你只需专注写 Markdown，剩下的（生成 HTML、部署）全部自动化完成，同时备份所有源码。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;(1) Github创建一个新的&lt;strong&gt;私有仓库&lt;/strong&gt; (例如hugo-main)，用于存放Hugo的主文件，文章&lt;/li&gt;
+&lt;li&gt;(2) 前往主页，点击头像，Setttings -&amp;gt; Developer Settings -&amp;gt; Personal access tokens，创建一个token(classic)&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505256.png&#34;
+	width=&#34;1329&#34;
+	height=&#34;858&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505256_hu_f18c78707893046f.png 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505256_hu_a79284267891189.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;154&#34;
+		data-flex-basis=&#34;371px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505257.png&#34;
+	width=&#34;371&#34;
+	height=&#34;176&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505257_hu_2cc9ef45e9c9d54d.png 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505257_hu_8cb9e1515dce35da.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;210&#34;
+		data-flex-basis=&#34;505px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;(3) token选择永不过期，并勾选 repo 和 workflow 选项&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505258.png&#34;
+	width=&#34;889&#34;
+	height=&#34;862&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505258_hu_c3b403f6dd1c4148.png 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505258_hu_fbf88a0ebae2aa4a.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;103&#34;
+		data-flex-basis=&#34;247px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505259.png&#34;
+	width=&#34;688&#34;
+	height=&#34;267&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505259_hu_78394d261e5a69e5.png 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-202505259_hu_474b10c267af6535.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;257&#34;
+		data-flex-basis=&#34;618px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;(4) 为保证安全，将生成的token，保存的仓库的变量中，前往Settings -&amp;gt; Secrets and variables -&amp;gt; Actions中设置&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-2025052510.png&#34;
+	width=&#34;994&#34;
+	height=&#34;952&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-2025052510_hu_9fc4edf8ed3dad20.png 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-2025052510_hu_c3f21e3e5a85df43.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;104&#34;
+		data-flex-basis=&#34;250px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-2025052511.png&#34;
+	width=&#34;954&#34;
+	height=&#34;595&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-2025052511_hu_faa472ad843f39ee.png 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-2025052511_hu_f36ed7a64ffce0e5.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;160&#34;
+		data-flex-basis=&#34;384px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;(5) 在hugo主文件创建一个.github/workflows/xxxx.yaml文件，将以下内容复制进去，想具体了解更多，可查看【&lt;a class=&#34;link&#34; href=&#34;[https://docs.github.com/zh/actions&#34; &gt;Github Action文档&lt;/a&gt;]】&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	name: deploy
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# 代码提交到main分支时触发github action
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;on:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  push:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    branches:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      - main
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;jobs:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  deploy:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    runs-on: ubuntu-latest
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    steps:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        - name: Checkout
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          uses: actions/checkout@v4
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          with:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              fetch-depth: 0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        - name: Setup Hugo
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          uses: peaceiris/actions-hugo@v3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          with:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              hugo-version: &amp;#34;latest&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              extended: true
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        - name: Build Web
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          run: hugo -D
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        - name: Deploy Web
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          uses: peaceiris/actions-gh-pages@v4
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          with:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              PERSONAL_TOKEN: ${{ secrets.你的token变量名 }}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              EXTERNAL_REPOSITORY: 你的github名/你的仓库名
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              PUBLISH_BRANCH: main
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              PUBLISH_DIR: ./public
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              commit_message: auto deploy
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-2025052513.png&#34;
+	width=&#34;857&#34;
+	height=&#34;902&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-2025052513_hu_233e76a922f0722f.png 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-2025052513_hu_f0a6c3b4efe74efa.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;95&#34;
+		data-flex-basis=&#34;228px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-2025052514.png&#34;
+	width=&#34;1207&#34;
+	height=&#34;670&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-2025052514_hu_4140b60cc092d332.png 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-2025052514_hu_1bd964ea2807f6e4.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;180&#34;
+		data-flex-basis=&#34;432px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;(6) 在hugo主文件创建.gitignore文件，来避免提交不必要的文件&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-2025052512.png&#34;
+	width=&#34;156&#34;
+	height=&#34;406&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-2025052512_hu_a9425ef71a4f9bdd.png 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-2025052512_hu_fa991b2abec3d4d1.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;38&#34;
+		data-flex-basis=&#34;92px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# 不需要自动生成的文件
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;public
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;resources
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.hugo_build.lock
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# 不需要hugo命令
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo.exe
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;(7) 在hugo文件夹打开CMD，将hugo的主文件上传到仓库，上传成功后会触发Github Action，来自动部署你的静态页面&lt;/li&gt;
+&lt;li&gt;会忽略上面设置的文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add . //这里选择添加全部文件
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &amp;#34;first commit&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git branch -M main
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git remote add origin {你的github仓库地址}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push -u origin main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;(8) 批处理脚本简化部署流程，创建txt，将部署的cmd 命令写入，修改txt格式为bat&lt;/li&gt;
+&lt;li&gt;&lt;img src=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-2025052515.png&#34;
+	width=&#34;972&#34;
+	height=&#34;912&#34;
+	srcset=&#34;https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-2025052515_hu_24b22775b03b7e1e.png 480w, https://coolestzero.github.io/p/hugo--github-%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/images/img-2025052515_hu_e6e6a61c49c0baf3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;106&#34;
+		data-flex-basis=&#34;255px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    @echo off
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    cd /d D:\blog\dev
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    git commit -m &amp;#34;update&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    git push
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
